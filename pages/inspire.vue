@@ -1,4 +1,5 @@
 <template>
+  
   <v-row>
     <v-col class="text-center">
       <img src="/v.png" alt="Vuetify.js" class="mb-5" />
@@ -15,7 +16,11 @@
 </template>
 
 <script>
+import navbar from '../components/navbar.vue'
 export default {
   name: 'InspirePage',
+  components:{
+    navbar,
+  }
 }
 </script>
