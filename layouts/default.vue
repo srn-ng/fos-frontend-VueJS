@@ -1,13 +1,21 @@
 <template>
   <v-app>
     <navbar></navbar>
+  
+
     <v-main>
-      <nuxt />
+      <index id="index" class="index"/>
+      <about id="about" class="about" />
+
     </v-main>
+
   </v-app>
 </template> 
 <script>
 import navbar from '../components/navbar.vue'
+import index from "../pages/index.vue"
+import about from "../pages/about.vue"
+
 export default {
   name: 'DefaultLayout',
   data() {
@@ -40,6 +48,8 @@ export default {
   },
   components:{
     navbar,
+    index,
+    about
   }
 }
 </script>
