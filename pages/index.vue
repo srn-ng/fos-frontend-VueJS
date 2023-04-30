@@ -1,87 +1,100 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
-          </p>
-          <p>
-            For more information on Vuetify, check out the
-            <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation </a
-            >.
-          </p>
-          <p>
-            If you have questions, please join the official
-            <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord </a
-            >.
-          </p>
-          <p>
-            Find a bug? Report it on the github
-            <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board </a
-            >.
-          </p>
-          <p>
-            Thank you for developing with Vuetify and I look forward to bringing
-            more exciting features in the future.
-          </p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
+  <v-card class="pb-5" fluid>
+    <v-img src="/images/Background-Polygon.png">
+
+      <v-row>
+        <v-col cols="4" style="margin-top: 5%; margin-left: 5%;">
+          <div class="text-container">
+
+            <h3 style="display: inline-block;">
+              Apprendre.
+
+              <br />
+              Evoluer.
+
+              <br />
+              Réussir.
+
+            </h3>
+
+            <h4 style="display: inline-block; margin-top: 10%;">
+              <span class="algiers-text">ALGIERS</span> TECH SUMMER SCHOOL
+            </h4>
+            <v-divider class="my-4" color="white" width="15%"></v-divider>
+            <p style="margin-top: 10%;">Le premier programme de formation pluridisciplinaire de haut niveau conçu pour
+              accompagner les
+              jeunes algériens dans leurs premiers pas vers le monde professionnel.</p>
+
           </div>
-          <hr class="my-3" />
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br />
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+        </v-col>
+        <v-col cols="1"></v-col>
+        <v-col cols="6" style="margin-top: 5%;">
+          <v-row>
+
+            <v-col cols="6" style="margin-top: 20%;">
+              <img src="/images/Rectangle image 1.png">
+            </v-col>
+            <v-col cols="6">
+              <img src="/images/Rectangle image 2.png">
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+    </v-img>
+
+  </v-card>
 </template>
 
 <script>
+import { VImg } from 'vuetify/lib'
+
 export default {
   name: 'IndexPage',
+  components: {
+    VImg
+  }
 }
 </script>
+
+<style>
+#algiers-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  transform: translateY(50%);
+  width: 10%;
+}
+
+#algiers-text {
+  position: relative;
+}
+
+.text-container {
+  color: #fff;
+}
+
+.text-container h3 {
+  font-family: 'Montserrat semibold', sans-serif;
+  font-size: 2.5rem;
+}
+
+.text-container h4 {
+  font-family: 'Montserrat bold', sans-serif;
+  font-size: 2rem;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+
+  /* change this to the color you want your text to be */
+}
+
+.background-image-container {
+  background-image: url("/images/Background-Polygon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+</style>

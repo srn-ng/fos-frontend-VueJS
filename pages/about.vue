@@ -1,0 +1,57 @@
+<template>
+    <v-card style="margin-top: -20px;" class="pb-5" fluid>
+        <v-img src="/images/Background-Polygon-2.png">
+            <div class="text-center">
+                <h4 style="font-size: 2rem; color: #046380">Le programme</h4>
+                <v-divider class="my-4 mx-auto" color="#046380" width="5%"></v-divider>
+
+                <div style="margin-top: 10%; margin-left: 10%; margin-right: 30%; text-align: justify;">
+                    <p>Ce programme est à destination des jeunes diplômés en ingénierie des universités et écoles
+                        algériennes. D’un côté, les jeunes font état de difficultés à s’insérer sur le marché du travail à
+                        l’issue de leur diplomation, localement comme à l’international. De l’autre, les entreprises
+                        souffrent d’une inadéquation entre la formation initiale des jeunes diplômés et leurs besoins.
+
+                        <br />
+                        <br />
+                        Face à ce constat, ce programme d’executive education offre à des jeunes diplômés, préalablement
+                        sélectionnés sur la base de leur motivation et de l’excellence de leur profil académique, une
+                        formation accélérée en trois mois.
+
+                        <br />
+                        <br />
+                        Cette formation est dispensée par des enseignants et acteurs du secteur privé issus des meilleures
+                        universités, écoles et entreprises étrangères, et donc au fait des standards internationaux.
+
+                        <br />
+                    </p>
+
+
+                </div>
+            </div>
+        </v-img>
+    </v-card>
+</template>
+<script>
+import { VImg } from 'vuetify/lib'
+
+export default {
+    name: 'IndexPage',
+    components: {
+        VImg
+    }
+}
+</script>
+<style>
+#program-line {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+#program-text {
+    position: relative;
+    font-family: 'Montserrat semibold', sans-serif;
+    font-size: 2rem;
+    color: #046380
+}</style>
