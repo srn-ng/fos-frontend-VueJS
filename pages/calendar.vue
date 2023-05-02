@@ -3,7 +3,7 @@
     <v-img src="/images/Background-Polygon-3.png">
       <div>
         <div style="margin-left: 35%; margin-top:5%">
-          <h4 style="font-size: 2rem; color: #046380">Calendrier</h4>
+          <h4 style="font-size: 2rem; color: #046380; font-family: 'Montserrat';">Calendrier</h4>
           <v-divider class="my-4" color="#046380" width="5%"></v-divider>
         </div>
 

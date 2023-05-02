@@ -8,6 +8,9 @@
       <overview id="about"/>
       <contenu id="contenu"/>
       <calendar id="calendar"/>
+      <faq id="faq"/>
+      <contact id="contact"/>
+
     </v-main>
 
   </v-app>
@@ -18,6 +21,9 @@ import index from "../pages/index.vue"
 import overview from "../pages/overview.vue"
 import calendar from "../pages/calendar.vue"
 import contenu from "../pages/content.vue"
+import faq from "../pages/faq.vue"
+import contact from "../pages/contact.vue"
+
 
 export default {
   name: 'DefaultLayout',
@@ -55,6 +61,8 @@ export default {
     overview,
     calendar,
     contenu,
+    faq,
+    contact
   }
 }
 </script>
