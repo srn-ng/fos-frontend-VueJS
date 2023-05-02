@@ -1,26 +1,26 @@
 <template>
   <v-app>
     <navbar></navbar>
-  
-
     <v-main>
-      <index id="index"/>
-      <overview id="about"/>
-      <contenu id="contenu"/>
-      <calendar id="calendar"/>
+      <index id="index" />
+      <overview id="about" />
+      <contenu id="contenu" />
+      <calendar id="calendar" />
+      <partners id="partners" />
       <faq id="faq"/>
       <contact id="contact"/>
 
     </v-main>
-
   </v-app>
 </template> 
 <script>
 import navbar from '../components/navbar.vue'
-import index from "../pages/index.vue"
-import overview from "../pages/overview.vue"
-import calendar from "../pages/calendar.vue"
-import contenu from "../pages/content.vue"
+import index from '../pages/index.vue'
+import overview from '../pages/overview.vue'
+import calendar from '../pages/calendar.vue'
+import contenu from '../pages/content.vue'
+import partners from '../pages/partners.vue'
+
 import faq from "../pages/faq.vue"
 import contact from "../pages/contact.vue"
 
@@ -55,16 +55,19 @@ export default {
       title: 'Vuetify.js',
     }
   },
-  components:{
+  components: {
     navbar,
     index,
     overview,
     calendar,
     contenu,
+    partners,
     faq,
     contact
-  }
+  },
 }
 </script>
+<style >
+</style>
 
 
