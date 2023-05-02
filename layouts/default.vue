@@ -4,9 +4,10 @@
   
 
     <v-main>
-      <index id="index" class="index"/>
-      <about id="about" class="about" />
-
+      <index id="index"/>
+      <overview id="about"/>
+      <contenu id="contenu"/>
+      <calendar id="calendar"/>
     </v-main>
 
   </v-app>
@@ -14,7 +15,9 @@
 <script>
 import navbar from '../components/navbar.vue'
 import index from "../pages/index.vue"
-import about from "../pages/about.vue"
+import overview from "../pages/overview.vue"
+import calendar from "../pages/calendar.vue"
+import contenu from "../pages/content.vue"
 
 export default {
   name: 'DefaultLayout',
@@ -49,7 +52,9 @@ export default {
   components:{
     navbar,
     index,
-    about
+    overview,
+    calendar,
+    contenu,
   }
 }
 </script>

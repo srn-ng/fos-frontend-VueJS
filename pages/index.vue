@@ -1,6 +1,6 @@
 <template>
-  <v-card class="pb-5" fluid>
-    <v-img src="/images/Background-Polygon.png">
+  <v-card class="pb-5" fluid elevation="0">
+    <v-img src="/images/Background-Polygon-1.png">
 
       <v-row>
         <v-col cols="4" style="margin-top: 5%; margin-left: 5%;">
