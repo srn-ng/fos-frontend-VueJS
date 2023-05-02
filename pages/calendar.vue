@@ -1,6 +1,6 @@
 <template>
   <v-card style="margin-top: -20px" class="pb-5" fluid elevation="0">
-    <v-img src="/images/Background-Polygon-3.png">
+    <v-img src="/images/Background-Polygon-3.png" cover>
       <div>
         <div style="margin-left: 35%; margin-top:5%">
           <h4 style="font-size: 2rem; color: #046380">Calendrier</h4>
