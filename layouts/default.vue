@@ -11,6 +11,11 @@
       <contact id="contact"/>
 
     </v-main>
+    <v-footer app absolute color="#D9D9D9" height="128px"  >
+      <v-img src="/images/logo-color 1.png" class="imagess"></v-img> 
+
+    </v-footer>
+
   </v-app>
 </template> 
 <script>
@@ -68,6 +73,13 @@ export default {
 }
 </script>
 <style >
+.imagess{
+  width:142px !important;
+  display:block !important;
+  margin-top: 10px !important;
+  height: 100% !important;
+max-width: 15%; 
+}
 </style>
 
 
