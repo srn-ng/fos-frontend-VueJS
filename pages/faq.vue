@@ -61,8 +61,7 @@ body {
 }
 
 h2 {
-    margin: 10px auto 40px;
-    text-align: center;
+    margin: 10px 35% 40px;
     color:#046380;
     font-size: 2rem;
 }

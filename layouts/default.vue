@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <navbar></navbar>
+    <navbar @change-drawer="handleEmit"></navbar>
     <v-main>
       <index id="index" />
       <overview id="about" />
@@ -9,10 +9,30 @@
       <partners id="partners" />
       <faq id="faq"/>
       <contact id="contact"/>
-
     </v-main>
-    <v-footer app absolute color="#D9D9D9" height="128px"  >
-      <v-img src="/images/logo-color 1.png" class="imagess"></v-img> 
+    <v-navigation-drawer v-model="drawer">
+      <v-list nav dense>
+        <v-list-item-group active-class="deep-purple--text text--accent-4">
+          <v-list-item>
+            <v-list-item-title>Foo</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>Bar</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>Fizz</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>Buzz</v-list-item-title>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+    <v-footer app absolute color="#D9D9D9" height="128px">
+      <v-img src="/images/logo.png" class="imagess"></v-img>
 
     </v-footer>
 
@@ -70,15 +90,18 @@ export default {
     faq,
     contact
   },
+  methods: {
+    handleEmit() {
+      console.log("emit received")
+      this.drawer = ! this.drawer
+    }
+  }
 }
 </script>
 <style >
-.imagess{
-  width:142px !important;
-  display:block !important;
-  margin-top: 10px !important;
-  height: 100% !important;
-max-width: 15%; 
+.imagess {
+
+  max-width: 10%;
 }
 </style>
 

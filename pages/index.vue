@@ -1,9 +1,8 @@
 <template>
   <v-card class="pb-5" fluid elevation="0">
-    <v-img src="/images/Background-Polygon-1.png">
-
+    <v-img  :src="$vuetify.breakpoint.lgAndUp ? '/images/Background-Polygon-1.png' : '/images/Rectangle-12.png'">
       <v-row>
-        <v-col cols="4" style="margin-top: 5%; margin-left: 5%;">
+        <v-col xs="12" sm="12" md="4" lg="4" style="margin-top: 5%; margin-left: 5%;">
           <div class="text-container">
 
             <h3 style="display: inline-block;">
@@ -28,14 +27,14 @@
           </div>
         </v-col>
         <v-col cols="1"></v-col>
-        <v-col cols="6" style="margin-top: 5%;">
+        <v-col xs="0" sm="0" md="6" lg="6" style="margin-top: 5%;">
           <v-row>
 
-            <v-col cols="6" style="margin-top: 20%;">
-              <img src="/images/Rectangle image 1.png">
+            <v-col cols="6" style="margin-top: 20%; ">
+              <img src="/images/Rectangle image 1.png" v-if="$vuetify.breakpoint.lgAndUp" style="margin-left: -10%;">
             </v-col>
             <v-col cols="6">
-              <img src="/images/Rectangle image 2.png">
+              <img src="/images/Rectangle image 2.png" v-if="$vuetify.breakpoint.lgAndUp">
             </v-col>
           </v-row>
         </v-col>
@@ -44,6 +43,7 @@
 
   </v-card>
 </template>
+
 
 <script>
 import { VImg } from 'vuetify/lib'
@@ -57,6 +57,27 @@ export default {
 </script>
 
 <style>
+@media only screen and (max-width: 600px) {
+
+  /* Apply style to h3 with class 'small-screen' */
+  .small-screen {
+    font-size: 1.5rem;
+    /* Add any other styles you want to apply to h3 on small screens */
+  }
+
+}
+
+@media only screen and (min-width: 601px) {
+
+  /* Apply style to h3 with class 'large-screen' */
+  .large-screen {
+    font-size: 2.5rem;
+    display: inline-block;
+    text-align: center;
+    /* Add any other styles you want to apply to h3 on large screens */
+  }
+}
+
 #algiers-line {
   position: absolute;
   left: 0;
@@ -82,13 +103,12 @@ export default {
 
 .text-container h4 {
   font-family: 'Montserrat bold', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 * {
   font-family: 'Montserrat', sans-serif;
 
-  /* change this to the color you want your text to be */
 }
 
 .background-image-container {

@@ -1,24 +1,13 @@
 <template>
   <v-card style="margin-top: -20px" class="pb-5" fluid elevation="0">
     <v-img src="/images/Background-Polygon-2.png">
-      <div >
-        <div style=" margin-top: 5%; margin-left: 35%;">
-          <h4 style="font-size: 2rem; color: #046380">Le programme</h4>
-          <v-divider
-            class="my-4"
-            color="#046380"
-            width="5%"
-          ></v-divider>
+      <div class="divvv">
+        <div style=" margin-top: 5%;">
+          <h4 style="font-size: 2rem; color: #046380" class="program-title">Le programme</h4>
+          <v-divider class="my-4" color="#046380" width="5%"></v-divider>
         </div>
 
-        <div
-          style="
-            margin-top: 5%;
-            margin-left: 10%;
-            margin-right: 30%;
-            text-align: justify;
-          "
-        >
+        <div class="description-div">
           <p class="description">
             Ce programme est à destination des jeunes diplômés en ingénierie des
             universités et écoles algériennes. D’un côté, les jeunes font état
@@ -59,6 +48,33 @@ export default {
 }
 </script>
 <style>
+@media only screen and (min-width: 601px) {
+  .program-title{
+    margin-left: 35%;
+  }
+  .description-div {
+    margin-top: 5%;
+    margin-left :10% ;
+    margin-right: 30%;
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .divvv {
+    text-align: center;
+    align-items: center;
+  }
+
+  .description-div {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+  
+  }
+}
+
 #program-line {
   position: absolute;
   margin: auto;
@@ -73,7 +89,7 @@ export default {
   color: #046380;
 }
 
-.description{
-    color:#6E6B80
+.description {
+  color: #6E6B80
 }
 </style>
