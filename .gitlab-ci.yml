@@ -14,6 +14,10 @@ pages:
       # The folder that contains the built files to be published. This
       # must be called "public".
       - public
+      
+default:
+  tags: ["general", "common"]  
+   
 
   only:
     # Trigger a new build and deploy only when there is a push to the
