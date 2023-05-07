@@ -5,6 +5,10 @@ before_script:
   # Functions that should be executed before the build script is run
   - npm install
 
+
+default:
+  tags: ["general", "common"] 
+
 pages:
   script:
     # Specify the steps involved to build your app here
@@ -14,11 +18,6 @@ pages:
       # The folder that contains the built files to be published. This
       # must be called "public".
       - public
-      
-default:
-  tags: ["general", "common"]  
-   
-
   only:
     # Trigger a new build and deploy only when there is a push to the
     # below branch(es)
