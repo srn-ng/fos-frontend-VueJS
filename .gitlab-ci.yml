@@ -10,6 +10,7 @@ default:
   tags: ["general", "common"] 
 
 pages:
+  stage: deploy
   script:
     # Specify the steps involved to build your app here
     - npm run build
