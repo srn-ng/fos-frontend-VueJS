@@ -5,6 +5,9 @@ before_script:
   # Functions that should be executed before the build script is run
   - npm install
 
+cache:
+  paths:
+    - node_modules/
 
 default:
   tags: ["general", "common"] 
