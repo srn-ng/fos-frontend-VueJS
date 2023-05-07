@@ -16,7 +16,7 @@ pages:
   stage: deploy
   script:
     # Specify the steps involved to build your app here
-    - npm run generate
+    - npm run build
     - mv dist public
   artifacts:
     paths:
