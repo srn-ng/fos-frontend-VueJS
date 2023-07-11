@@ -30,7 +30,7 @@ export default {
   router: {
     routes: [
       {
-        path: '/',
+        path: '/index',
         component: 'pages/index.vue'
       },
       {
