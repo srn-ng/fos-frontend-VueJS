@@ -1,5 +1,5 @@
 <template>
-  <v-card class="pb-5" fluid elevation="0">
+  <v-card class="pb-5 accueil  " fluid elevation="0">
     <v-img  :src="$vuetify.breakpoint.lgAndUp ? '/images/Background-Polygon-1.png' : '/images/Rectangle-12.png'">
       <v-row>
         <v-col xs="12" sm="12" md="4" lg="4" style="margin-top: 5%; margin-left: 5%;">
@@ -17,7 +17,7 @@
             </h3>
 
             <h4 style="display: inline-block; margin-top: 10%;">
-              <span class="algiers-text">ALGIERS</span> TECH SUMMER SCHOOL
+              <span class="algiers-text">Finish </span> Off SCHOOL
             </h4>
             <v-divider class="my-4" color="white" width="15%"></v-divider>
             <p style="margin-top: 10%;">Le premier programme de formation pluridisciplinaire de haut niveau conçu pour
@@ -117,4 +117,5 @@ export default {
   background-size: cover;
   background-position: center center;
 }
+
 </style>
