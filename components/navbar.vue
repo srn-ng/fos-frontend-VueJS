@@ -91,7 +91,7 @@ export default {
 
 .navbar-button:hover {
   background-color: transparent !important;
-  color: #19a5cf;
+  
   font-weight: 800;
 }
 .navbar-button a {
@@ -104,7 +104,7 @@ export default {
   background-color: transparent !important;
 }
 
-.program {
+/* .program {
   border: solid;
   border-color: #046380;
   background-color: white !important;
@@ -112,12 +112,12 @@ export default {
   border-width: 1px;
   border-radius: 10px !important;
   padding: 1%;
-}
+}  */
 
-.program:hover {
+/* .program:hover {
   background-color: #046380 !important;
   color: white !important;
-}
+}  */
 
 .icon.mdi:before {
   color: #2d2d2d !important;
