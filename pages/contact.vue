@@ -14,10 +14,6 @@
             <img src="/images/mail.png" alt="" class="imgC">
             <span>contact@finishoffschool.com</span>
           </li>
-          <li>
-            <img src="/images/call.png" alt="" class="imgC">
-            <span>05555555555</span>
-          </li>
         </ul>
        </div> 
       </div>
