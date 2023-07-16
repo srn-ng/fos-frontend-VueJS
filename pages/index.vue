@@ -26,17 +26,20 @@
       <v-col cols="10" md="4" style="margin-top: 5%">
         <v-row>
           <v-col cols="6" style="margin-top: 20%">
-            <img
-              src="/images/Rectangle image 1.png"
-              v-if="$vuetify.breakpoint.lgAndUp"
-              style="margin-left: -10%"
-            />
+            <v-card rounded>
+              <v-img
+                src="/images/Rectangle image 1.jpg"
+                
+              ></v-img>
+            </v-card>
           </v-col>
           <v-col cols="6">
-            <img
-              src="/images/Rectangle image 2.png"
-              v-if="$vuetify.breakpoint.lgAndUp"
-            />
+            <v-card rounded>
+              <v-img
+                src="/images/Rectangle image 2.jpg"
+                
+              ></v-img>
+            </v-card>
           </v-col>
         </v-row>
       </v-col>
