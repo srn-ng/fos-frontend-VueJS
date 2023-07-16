@@ -7,8 +7,8 @@
       <contenu id="contenu" />
       <calendar id="calendar" />
       <partners id="partners" />
-      <faq id="faq"/>
-      <contact id="contact"/>
+      <faq id="faq" />
+      <contact id="contact" />
     </v-main>
     <v-navigation-drawer v-model="drawer">
       <v-list nav dense>
@@ -33,9 +33,7 @@
     </v-navigation-drawer>
     <v-footer app absolute color="#D9D9D9" height="128px">
       <v-img src="/images/logo.png" class="imagess"></v-img>
-
     </v-footer>
-
   </v-app>
 </template> 
 <script>
@@ -46,9 +44,8 @@ import calendar from '../pages/calendar.vue'
 import contenu from '../pages/content.vue'
 import partners from '../pages/partners.vue'
 
-import faq from "../pages/faq.vue"
-import contact from "../pages/contact.vue"
-
+import faq from '../pages/faq.vue'
+import contact from '../pages/contact.vue'
 
 export default {
   name: 'DefaultLayout',
@@ -88,19 +85,22 @@ export default {
     contenu,
     partners,
     faq,
-    contact
+    contact,
   },
   methods: {
     handleEmit() {
-      console.log("emit received")
-      this.drawer = ! this.drawer
-    }
-  }
+      console.log('emit received')
+      this.drawer = !this.drawer
+    },
+  },
 }
 </script>
 <style >
+#index {
+  clip-path: polygon(9% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 9%);
+  background-color: rgba(4, 99, 128);
+}
 .imagess {
-
   max-width: 10%;
 }
 </style>
