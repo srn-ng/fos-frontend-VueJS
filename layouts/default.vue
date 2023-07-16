@@ -71,7 +71,7 @@ export default {
         {
           icon: 'mdi-chart-bubble',
           title: 'Accueil',
-          to: '/accueil',
+          to: '/index',
         },
       ],
       miniVariant: false,

@@ -1,5 +1,5 @@
 # The Docker image that will be used to build your app
-image: node:lts
+image: node
 
 before_script:
   # Functions that should be executed before the build script is run
@@ -17,6 +17,7 @@ pages:
   script:
     # Specify the steps involved to build your app here
     - npm run generate
+    - mv dist public
   artifacts:
     paths:
       # The folder that contains the built files to be published. This
