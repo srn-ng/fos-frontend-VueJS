@@ -60,6 +60,18 @@
                 shaped
                 required
               ></v-textarea>
+
+              <v-btn
+                :disabled="!valid"
+                style="
+                  background-color: #046380 !important;
+                  color: #fff !important;
+                "
+                class="mr-4"
+                @click="validate"
+              >
+                Envoyer
+              </v-btn>
             </v-form>
           </v-card-text>
         </v-card>
@@ -85,6 +97,9 @@ export default {
     ],
     message: '',
   }),
+  methods: {
+    validate: () => ({}),
+  },
 }
 </script>
 
