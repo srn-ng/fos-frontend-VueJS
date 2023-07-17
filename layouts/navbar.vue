@@ -1,37 +1,42 @@
 <template>
   <div>
-    <v-app-bar app color="white" flat hide-on-scroll class="NavBar">
-      <v-toolbar-title>
-        <v-img class="logoNavBar" src="/images/logo.png"> </v-img>
-      </v-toolbar-title>
+    <header>
+      <v-app-bar app color="white" flat hide-on-scroll class="NavBar">
+        <v-toolbar-title>
+          <v-img class="logoNavBar" src="/images/logo.png"> </v-img>
+        </v-toolbar-title>
 
-      <div class="ml-auto button-group hidden-sm-and-down">
-        <v-btn text to="#index" class="navbar-button">Accueil</v-btn>
-        <v-btn text to="#about" class="navbar-button">A propos</v-btn>
-        <v-btn text to="#calendar" class="navbar-button">Le Programme</v-btn>
-        <v-btn text to="#partners" class="navbar-button">Partenaires</v-btn>
-        <v-btn text to="#faq" class="navbar-button">FAQ</v-btn>
-        <v-btn text to="#contact" class="navbar-button">Contact</v-btn>
-        <!-- <v-btn elevation="0" class=" navbar-button program">Rejoindre le programme</v-btn> -->
-      </div>
+        <div class="ml-auto button-group hidden-sm-and-down">
+          <v-btn text to="#index" class="navbar-button">Accueil</v-btn>
+          <v-btn text to="#about" class="navbar-button">A propos</v-btn>
+          <v-btn text to="#calendar" class="navbar-button">Le Programme</v-btn>
+          <v-btn text to="#partners" class="navbar-button">Partenaires</v-btn>
+          <v-btn text to="#faq" class="navbar-button">FAQ</v-btn>
+          <v-btn text to="#contact" class="navbar-button">Contact</v-btn>
+          <!-- <v-btn elevation="0" class=" navbar-button program">Rejoindre le programme</v-btn> -->
+        </div>
 
-      <v-menu offset-y v-model="menuOpen">
-        <template v-slot:activator="{ on }">
-          <v-btn icon v-on="on" class="d-sm-none" @click="toggleMenu">
-            <v-icon>mdi-menu</v-icon>
-          </v-btn>
-        </template>
-        <v-list>
-          <v-list-item
-            v-for="(button, index) in mobileButtons"
-            :key="index"
-            @click="navigate(button.to)"
-          >
-            <v-list-item-title>{{ button.label }}</v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-menu>
-    </v-app-bar>
+        <v-menu offset-y v-model="menuOpen">
+          <template v-slot:activator="{ on }">
+            <v-btn icon v-on="on" class="d-sm-none" @click="toggleMenu">
+              <v-icon>mdi-menu</v-icon>
+            </v-btn>
+          </template>
+          <v-list>
+            <v-list-item
+              v-for="(button, index) in mobileButtons"
+              :key="index"
+              @click="navigate(button.to)"
+            >
+              <v-list-item-title>{{ button.label }}</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+      </v-app-bar>
+    </header>
+    <div id="page-content">
+      <slot />
+    </div>
   </div>
 </template>
 
@@ -91,7 +96,7 @@ export default {
 
 .navbar-button:hover {
   background-color: transparent !important;
-  
+
   font-weight: 800;
 }
 .navbar-button a {
